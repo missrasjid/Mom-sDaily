@@ -2,14 +2,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home</title>
+    <title>Home - Mom's Daily</title>
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Your description">
     <meta name="keywords" content="Your keywords">
     <meta name="author" content="Your name">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="bootstrap/img/IconMoms.PNG" type="image/x-icon">
+    <link rel="shortcut icon" href="bootstrap/img/IconMoms.PNG" type="image/x-icon" />
     <link rel="stylesheet" href="bootstrap/css/bootstrap1.css" type="text/css" media="screen">
     <link rel="stylesheet" href="bootstrap/css/responsive.css" type="text/css" media="screen">
     <link rel="stylesheet" href="bootstrap/css/camera.css" type="text/css" media="screen"> 
@@ -24,8 +24,29 @@
               jQuery('.camera_wrap').camera();
         });    
 	</script>		
+	<style type="text/css">
+	.auto-style1 {
+		text-align: left;
+	}
+	.auto-style2 {
+		margin-top: 0;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 13px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: normal;
+		letter-spacing: normal;
+		line-height: 18.2px;
+		text-align: start;
+		text-indent: 0px;
+		text-transform: none;
+		white-space: normal;
+		word-spacing: 0px;
+		display: inline !important;
+	}
+	</style>
 	<!--[if lt IE 8]>
-  		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>  
+  		<div style='text-align:center'></div>  
  	<![endif]-->
   
   <!--[if (gt IE 9)|!(IE)]><!-->
@@ -41,22 +62,21 @@
   <![endif]-->
 </head>
 
-<body>
+<body style="background-color: #DDDDDD">
 <!--==============================header=================================-->
 <header class="p0">
-    <div class="container">
+    <div class="container" style="height: 254px">
     	<div class="row">
-        	<div class="span12">
-            	<div class="header-block clearfix">
+        	<div class="span12" style="height: 292px">
+            	<div class="header-block clearfix" style="left: 0px; top: -24px; height: 252px">
                     <div class="clearfix header-block-pad">
                         <h1 class="brand"><span lang="id">
-						<img alt="" src="../LogoMomsDaily.jpg" style="width: 250px; height: 250px">Mom's 
-						Guidelines</span></h1>
+						<img alt="" src="bootstrap/img/LogoMoms.PNG" style="width: 300px; height: 300px"></span></h1>
                         <form id="search-form" action="search.php" method="GET" accept-charset="utf-8" class="navbar-form" >
                             <input type="text" name="s" onBlur="if(this.value=='') this.value=''" onFocus="if(this.value =='' ) this.value=''"  >
-                            <a href="#" onClick="document.getElementById('search-form').submit()"></a>
-                        </form>
-                        <span class="contacts">Call Us :  <span>081212860444</span><br>E-mail: <a href="#">camp@clevio.com</a></span>
+                            <a href="#" onClick="document.getElementById('search-form').submit()">Search</a>
+                        	</form>
+                        <span class="contacts">Call Us :  <span>081212860444</span><br>E-mail: <a href="#">camp@clevio.co</a></span>
                     </div>
                     <div class="navbar navbar_ clearfix">
                         <div class="navbar-inner navbar-inner_">
@@ -64,27 +84,13 @@
                                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse_">MENU</a>                                                   
                                 <div class="nav-collapse nav-collapse_ collapse">
                                     <ul class="nav sf-menu">
-                                      <li class="active li-first"><a href="index.html"><em class="hidden-phone"></em><span class="visible-phone">Home</span></a></li>
-                                      <li class="sub-menu"><a href="index-1.html">About Us</a>
-                                        <ul>
-                                          <li><a href="#">Welcome Message</a></li>
-                                          <li class="sub-menu"><a href="#">Company Profile</a>
-                                            <ul>
-                                              <li><a href="#">Our Capabilities</a></li>
-                                              <li><a href="#">Advantages</a></li>
-                                              <li><a href="#">Work Team</a></li>
-                                              <li><a href="#">Partnership</a></li>
-                                              <li><a href="#">Support</a></li>
-                                            </ul>
-                                          </li>
-                                          <li><a href="#">Our History</a></li>
-                                          <li><a href="#">Testimonials</a></li>
-                                        </ul>
+                                      <li class="active li-first"><a href="MomsDaily.html">Home</a></li>
+                                      <li class="sub-menu"><a href="AboutUs.html">About Us</a>
                                       </li>
-                                      <li><a href="index-2.html">Lifestyle</a></li>
-                                      <li><a href="index-3.html">Parenting</a></li>
-                                      <li><a href="index-4.html">Eat</a></li>
-                                      <li><a href="index-5.html">Contact Us</a></li>
+                                      <li><a href="Lifestyle.html">Lifestyle</a></li>
+                                      <li><a href="Parenting.html">Parenting</a></li>
+                                      <li><a href="Eat.html">Eat</a></li>
+                                      <li><a href="ContactUs.html">Contact Us</a></li>
                                     </ul>
                                 </div>
                                 <ul class="social-icons">
@@ -105,11 +111,52 @@
          </div>   
     </div>
     <div class="slider">
-    <div class="camera_wrap">
-        <div data-src="bootstrap/img/slide1.jpg"></div>
-        <div data-src="bootstrap/img/slide2.jpg"></div>
-        <div data-src="bootstrap/img/slide3.jpg"></div>
-    </div>
+    <div class="camera_wrap" style="display: block; margin-bottom: 10px; height: 260px;">
+    	<div class="camera_fakehover">
+    		<div class="camera_src camerastarted">
+    			<div data-src="bootstrap/img/slide1.jpg"></div>
+        		<div data-src="bootstrap/img/slide2.jpg"></div>
+        		<div data-src="bootstrap/img/slide3.jpg"></div>
+    		</div>
+    		<div class="camera_target">
+    			<div class="cameraCont">
+    				<div class="cameraSlide cameraSlide_0 cameracurrent" style="visibility:visible; display:block; z-index:999;">
+    					<img src="bootstrap/img/slide1.jpg" data-alignment data-portrait width="1504" 
+    					height="566" style="visibility:visible; margin-top:0px; 
+    					position:absolute; left: -30px; top: 53px;">
+    					<div class="camerarelative" style="width:791px; height:260px;">
+    				</div>
+    				<div class="cameraSlide cameraSlide_1 cameranext" style="display:none; z-index:1;">
+    					<img src="bootstrap/img/slide2.jpg" class="imgLoaded" data-alignment data-portrait width="1674" 
+    					height="550" style="visibility:visible; height:260px; margin-top: 0px; position:absolute;
+    					margin-left: -0.172727px; width: 791.345;">
+    					<div class="camerarelative" style="width: 791px; height: 260px;"></div>
+    				</div>
+    				<div class="cameraSlide cameraSlide_2 cameranext" style="display:none; z-index:1;">
+    					<img src="bootstrap/img/slide3.jpg" class="imgLoaded" data-alignment data-portrait width="1674" height="550"
+    					style="visibility: visible; height: 260px; margin-top: 0px; position: absolute; margin-left:-0.172727px;
+    					width: 791.345px;">
+    				</div>
+    				<div class="cameraSlide cameraSlide_3 cameranext" style="z-index: 1; display:none;">_</div>
+    		</div>
+    		<div class="camera_target_content">
+    			<div_class="cameraContents">
+    			<div_class="cameraContents" style="display: none;"></div>
+    			<div class="cameraContent cameracurrent" style="display:block;"></div>
+    			<div class="cameraContent" style="display:none;"></div>
+    		</div>
+    	</div>
+    		<div class="camera_bar" style="display: none; top:auto; height: 7px;">
+    			<span class="camera_bar-cont" style="opacity: 0.8; position: absolute; left: 0px; right: 0px; top: 0px;
+    			bottom: 0px; background-color: rgb (34, 34, 34);">_</span>
+    		</div>
+    		
+    	<div class="camera_pag">_</div>
+    		<ul class="camera_pag_ul">_</ul>
+    	</div>
+    	<div class="camera_loader" style="display:none; visibility:visible;"></div>	
+        
+    </div>    
 </div>
 </header>
 
@@ -121,12 +168,14 @@
           <li class="span3">
             <div class="thumbnail">
               <div class="caption">
-              	<img src="img/img-1.png" alt="">
-                <h5>Most</h5>
-                <h3>popular</h3>
+              	<img src="bootstrap/img/img-1.png" alt="">
+                <h5>Berita</h5>
+                <h3>populer</h3>
               </div>  
               <div class="thumbnail-pad">
-                  <p>Praesent vestibulum molestie lacus. Aenean noy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. </p>
+				  <span class="auto-style2" style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 18.2px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none;">
+				  Stadion Utama Gelora Bung Karno (GBK), Jakarta sudah mulai 
+				  berbenah menyambut konser Bon Jovi.....<br><br></span>
                   <a href="#" class="btn btn_">more info</a>
               </div>
             </div>
@@ -134,41 +183,47 @@
           <li class="span3">
             <div class="thumbnail">
               <div class="caption">
-              	<img src="img/img-2.png" alt="">
-                <h5>Beauty</h5>
-                <h3>Gifts</h3>
+              	<img src="bootstrap/img/img-2.png" alt="">
+                <h5>Kado</h5>
+                <h3>Terindah</h3>
               </div>  
               <div class="thumbnail-pad">
-                  <p>Praesent vestibulum molestie lacus. Aenean my hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. </p>
-                  <a href="#" class="btn btn_">more info</a>
+                  <p class="auto-style2" style="orphans: auto; widows: 1; -webkit-text-stroke-width: 0px; float: none;">
+				  Siapa yang tak senang diberi hadiah? Apalagi, kado unik dan 
+				  penuh makna dari sosok yang disayangi.....</p>
+                  <br><br>
+                  <a class="btn btn_" href="http://tabloidnova.com/Keluarga/Pasangan/Survei-Nova-10-Kado-Unik-Dan-Berkesan-Bagi-Perempuan">more info</a>
               </div>
             </div>
           </li>
           <li class="span3">
             <div class="thumbnail">
               <div class="caption">
-              	<img src="img/img-3.png" alt="">
-                <h5>Attention</h5>
-                <h3>to Detail</h3>
+              	<img src="bootstrap/img/img-3.png" alt="">
+                <h5>Laporan</h5>
+                <h3>Pengguna</h3>
               </div>  
               <div class="thumbnail-pad">
-                  <p>Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suipit varius mi. Cum sociis natoque penatibus et.</p>
-                  <a href="#" class="btn btn_">more info</a>
+				  <span class="auto-style2" style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 18.2px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 1; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none;">
+				  Laporan Perilaku membantu Anda mengetahui bagaimana pengguna 
+				  berinteraksi dengan aplikasi Anda.....<br><br></span>
+				  <a class="btn btn_" href="https://support.google.com/analytics/answer/2568878?hl=id">more info</a>
               </div>
             </div>
           </li>
           <li class="span3">
             <div class="thumbnail">
               <div class="caption">
-              	<img src="img/img-4.png" alt="">
-                <h5>Award-Winning</h5>
-                <h3>Fragrances</h3>
+              	<img src="bootstrap/img/img-4.png" alt="">
+                <h5>Seniman</h5>
+                <h3>Wanita</h3>
               </div>
               <div class="thumbnail-pad">  
-                  <p>Nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis.</p>
-                  <a href="#" class="btn btn_">more info</a>
+                  <p class="auto-style2">Di zaman sekarang, umumnya kaum wanita 
+				  memiliki kesempatan yang luas untuk meraih cita-cita .....</p>
+                  <br><br>
+                  <a class="btn btn_" href="http://female.kompas.com/read/2015/09/06/163616620/Tantangan.Berkarya.sebagai.Seniman.Wanita.di.Indonesia.">more info</a>
               </div>
-            </div>
           </li>
         </ul>
       </div>
@@ -178,34 +233,37 @@
         	<div class="clearfix cols-1">
                 <div class="span4 left-0">
                     <h4 class="indent-2">Welcome</h4>
-                    <p class="lead">Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. </p>
-                    <figure class="img-indent"><img src="img/page1-img1.jpg" alt="" class="img-radius"></figure>
-                    Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. 
-                </div>
+                    <div class="auto-style1">
+                    Selamat datang di website Mom's Daily. Web ini kami persembahkan kepada semua ibu rumah tangga seperti kami yang selalu ingin tetap bisa update informasi tanpa meninggalkan rutintas semua ibu rumah tangga di rumah</div>
+					<figure class="auto-style4" style="width: 96%">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1hvrUxkrnhQpG11FjRwNWVVJcvMhHXSqxSq4DqnJwen_s05S1"></figure>
+                    Dengan kemampuan kami yang terbatas, kami berusaha semaksimal mungkin menyajikan berbagai informasi buat ibu rumah tangga berdasarkan kebutuhan ibu rumah tangga pada umumnya. Happy Browsing Mum's.
+                    </div>
                 <div class="span4">
-                    <h4 class="indent-2">What We Do</h4>
-                    <p class="lead">Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. </p>
-                    <figure class="img-indent"><img src="img/page1-img2.jpg" alt="" class="img-radius"></figure>
-                    Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. 
+                    <h4 class="indent-4">What We Do</h4>
+                    Beberapa ibu rumah tangga yang memiliki latar belakang dan minat yang berbeda-beda dan dipertemukan dalam wadah CODER MUMS yang di fasilitasi oleh Clevio.co.<figure class="auto-style1">
+						<img src="img/team.jpg" alt="" class="img-radius" style="height: 180px" width="251"></figure>
+                    Sepanjang perjalanan berkumpulnya Coder Mums kemudian muncul ide untuk membuat website bersama dengan berbagai minat yang dimiliki semua coder mums.
                 </div>
             </div>
-            <h4 class="indent-1">our Capabilities:</h4>
-            <p class="lead">Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturien.</p>
+            <h4 class="indent-1"><span lang="id">OuR favorite links</span></h4>
+            <p class="lead"><span lang="id">Aneka rupa link favorit para Coder 
+			Mums tersaji disini :</span></p>
             <div class="lists">
             	<div class="span4 left-0">
                     <ul class="list">
-                        <li><a href="#">Praesent vestibulum molestie lacus aenean</a></li>
-                        <li><a href="#">nonummy hendrerit mauris</a></li>
-                        <li><a href="#">Phasellus porta fusce suscipit varius mi</a></li>
-                        <li><a href="#">Cum sociis natoque penatibus et magnis dis</a></li>
+                        <li><a href="http://www.marthastewart.com/cookhttp://www.marthastewart.com/cook">Martha Stewart's Kitchen</a></li>
+                        <li><a href="http://www.jamieoliver.com">Cook like Jamie</a></li>
+                        <li><a href="http://koleksikikie.com">Belajar dan belanja manik-manik</a></li>
+                        <li><a href="http://www.zalora.com">Belanja fashion terbaru</a></li>
                     </ul>
                 </div>
                 <div class="span4">
                     <ul class="list">
-                        <li><a href="#">Praesent vestibulum molestie lacus aenean</a></li>
-                        <li><a href="#">nonummy hendrerit mauris</a></li>
-                        <li><a href="#">Phasellus porta fusce suscipit varius mi</a></li>
-                        <li><a href="#">Cum sociis natoque penatibus et magnis dis</a></li>
+                        <li><a href="http://rumahinspirasi.com">Serba-serbi parenting</a></li>
+                        <li><a href="http://khanacademy.org">Learn anything here</a></li>
+                        <li><a href="http://qraved.com">Culinary update</a></li>
+                        <li><a href="http://brilio.net">Biar rajin tertawa</a></li>
                     </ul>
                 </div>
             </div>
@@ -215,28 +273,39 @@
         	<h4 class="indent-2">Latest News:</h4>
             <ul class="list-news">
             	<li>
-                	<a href="#" class="btn btn_">Apr 21, 2012</a>
-                    <p class="text-info">Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta.</p>
-                    Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. <a href="#" class="underline">>></a>
+                	<a href="#" class="btn btn_">Sept 12, 2015</a>
+                    <p class="text-info">Clevio dan di dukung oleh Microsoft mengadakan Student Workshop di Headquarter Mirosoft Indonesia, Bursa Efek Jakarta Tower 2, lantai 18.</p>  
+					<a class="underline" href="http://www.clevio.co/camp/package/#pakethttp://www.clevio.co/camp/package/#paket">>>></a>  
+                </li>
+                <li>
+                	<a href="http://health.liputan6.com/read/2296195/7-alasan-wanita-jepang-tak-akan-bisa-gemukhttp://health.liputan6.com/read/2296195/7-alasan-wanita-jepang-tak-akan-bisa-gemuk">
+					<a href="#" class="btn btn_">Agst 18, 2015</a>
+                    <p class="text-info">7 Alasan Wanita Jepang Tak Akan Bisa Gemuk</p>
+                    Banyak wanita Indonesia mungkin keheranan karena melihat proporsi tubuh wanita Jepang yang kecil dan seolah tidak bisa gemuk. Padahal, bila dilihat dari kebiasaan makannya, tidak jauh berbeda dengan orang Asia kebanyakan...<a href="http://health.liputan6.com/read/2296195/7-alasan-wanita-jepang-tak-akan-bisa-gemuk">
+					<span class="underline">>>></span></a></a>
                 </li>
                 <li>
                 	<a href="#" class="btn btn_">Apr 21, 2012</a>
-                    <p class="text-info">Aenean nonummy hendrerit mauris</p>
-                    Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes.  <a href="#" class="underline">>></a>
-                </li>
-                <li>
-                	<a href="#" class="btn btn_">Apr 21, 2012</a>
-                    <p class="text-info">Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturien.</p>
-                    Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes.  <a href="#" class="underline">>></a>
+                    <p class="text-info">4 Gangguan Kesehatan yang Umum Dialami Wanita, Waspadalah.</p>
+                    Untuk menjaga kebugaran fisik serta kesehatannya, wanita 
+					membutuhkan nutrisi lengkap. Berdasarkan Indonesia Health 
+					Profile 2005 yang dilaporkan oleh Departemen Kesehatan RI, 
+					80 persen penderita osteoporosis dan anemia adalah wanita. 
+					Beberapa gangguan kesehatan yang umum dialami wanita, antara 
+					lain ....
+					<a class="underline" href="http://health.liputan6.com/read/2267557/4-gangguan-kesehatan-yang-umum-dialami-wanita-waspadalah">>>></a>
                 </li>
             </ul>
             <h4 class="indent-1">testimonials:</h4>
-			<p class="p1">Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada.”</p>
-            <span class="clr"><strong>Mark Priston</strong>, <a href="#" class="link-2">demolink.org</a></span>
+			<p class="p1">Web ini menjadi unik karena gabungan dari beberapa 
+			ide ibu-ibu yang tergabung dalam <span class="auto-style3"><strong>CODER MUM'S</strong></span>, dan sesuai dengan 
+			kebutuhan ibu rumah tangga masa kini.</p>
+            <span class="clr"><strong>Andgzia</strong>, Coach Clevio</span>
         </div>
     </div>        
   </div>
 </section>
+
 <footer>
    <div class="container">
     <div class="row">
@@ -244,21 +313,21 @@
         <form id="newsletter" method="post" >
             <label>Newsletter</label>
             <div class="clearfix">
-                <input type="text" onFocus="if(this.value =='Enter e-mail here' ) this.value=''" onBlur="if(this.value=='') this.value='Enter e-mail here'" value="Enter e-mail here" >
+                <input type="text" onFocus="if(this.value =='Enter e-mail here' ) this.value=''" onBlur="if(this.value=='') this.value='Enter e-mail here'" value="Enter e-mail here" style="height: 32px" >
                 <a href="#" onClick="document.getElementById('newsletter').submit()" class="btn btn_">subscribe</a>
             </div>
         </form>
     </div>
     <div class="span8 float">
       	<ul class="footer-menu">
-        	<li><a href="index.html" class="current">Home Page</a>|</li>
-            <li><a href="index-1.html">About Us</a>|</li>
-            <li><a href="index-2.html">Lifestyle</a>|</li>
-            <li><a href="index-3.html">Parenting</a>|</li>
-            <li><a href="index-4.html">Eat</a>|</li>
-            <li><a href="index-5.html">Contact Us</a></li>
+        	<li><a href="MomsDaily.html" class="current">Home Page</a>|</li>
+            <li><a href="AboutUs.html">About Us</a>|</li>
+            <li><a href="Lifestyle.html">Lifestyle</a>|</li>
+            <li><a href="Parenting.html">Parenting</a>|</li>
+            <li><a href="Eat.html">Eat</a>|</li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
         </ul>
-      	Stylish   &copy;  2012  |   <a href="index-6.html">Privacy Policy</a> <!-- {%FOOTER_LINK} -->
+      	Mom's Daily   &copy;  2015  |   <a href="index-6.html">Privacy Policy</a> <!-- {%FOOTER_LINK} -->
       </div>
     </div>
    </div>
@@ -276,6 +345,5 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();</script>
-
 </body>
 </html>

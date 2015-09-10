@@ -102,29 +102,13 @@ function FP_preloadImgs() {//v1.0
  var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
  for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
 }
-
-function FP_swapImg() {//v1.0
- var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
- n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
- elm.$src=elm.src; elm.src=args[n+1]; } }
-}
-
-function FP_getObjectByID(id,o) {//v1.0
- var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
- else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
- if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
- for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
- f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
- for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
- return null;
-}
 // -->
 </script>
 
 
 </head>
 
-<body onload="FP_preloadImgs(/*url*/'button69.jpg',/*url*/'button6A.jpg',/*url*/'button3C.jpg',/*url*/'button3D.jpg')" style="color: #FFFFFF; background-color: #000000">
+<body onload="FP_preloadImgs(/*url*/'button69.jpg',/*url*/'button6A.jpg')" style="color: #FFFFFF; background-color: #000000">
 
 <p><h1 class="auto-style12" style="font-family:'Bradley Hand ITC'">Parenting - 
 "Rubrik Tanya"</h1></p>
@@ -140,7 +124,7 @@ function FP_getObjectByID(id,o) {//v1.0
 <table style="width: 100%">
 	<tr>
 		<td style="width: 685px">
-		<img src="fiza.png" style="width: 237px; height: 250px" /><br />
+		<img alt="" src="bootstrap/img/tanya2.jpg" style="width: 300px; height: 300px" /><br />
 		<br />
 		<span class="auto-style18">Psikolog</span><br />
 		<span class="auto-style17"><strong>Fiza Fitria Dini</strong></span></td>
@@ -162,7 +146,7 @@ function FP_getObjectByID(id,o) {//v1.0
                        </label>
                 </fieldset>
                   <div class="auto-style28" style="width: 274px; height: 24px">
-                      <img id="img2" alt="Submit" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img2',/*url*/'button3D.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img2',/*url*/'button3B.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img2',/*url*/'button3C.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img2',/*url*/'button3C.jpg')" src="button3B.jpg" style="border: 0" width="100" /><!-- MSComment="ibutton" fp-style="fp-btn: Border Bottom 1" fp-title="Submit" --></div>
+                      <img alt="" src="bootstrap/img/button3B.jpg" style="width: 100px; height: 20px" /></div>
               </form>
             </td>
 	</tr>
@@ -180,8 +164,8 @@ function FP_getObjectByID(id,o) {//v1.0
 <p class="text-center">
 <a href="Mom-sDaily/Parenting.html">
 <p class="auto-style26">
-<a href="Parenting.html">
-<img id="img1" alt="BACK" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'button18.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'button16.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'button17.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'button17.jpg')" src="button16.jpg" style="border: 0" width="100" /><!-- MSComment="ibutton" fp-style="fp-btn: Border Bottom 9" fp-title="BACK" --></a>
+</a>
+<img alt="" src="bootstrap/img/button10.jpg" style="width: 100px; height: 20px" />
 
 </p>
 

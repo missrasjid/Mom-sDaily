@@ -8,15 +8,33 @@
     <meta name="description" content="Your description">
     <meta name="keywords" content="Your keywords">
     <meta name="author" content="Your name">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="bootstrap/img/IconMoms.PNG" type="image/x-icon">
+    <link rel="shortcut icon" href="bootstrap/img/IconMoms.PNG" type="image/x-icon" />
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css" media="screen">
     <link rel="stylesheet" href="bootstrap/css/responsive.css" type="text/css" media="screen">
     <link rel="stylesheet" href="bootstrap/css/style.css" type="text/css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
-	<script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-    <script src="js/jquery.ui.totop.js" type="text/javascript"></script>	
+	<script type="text/javascript" src="bootstrap/js/jquery.js"></script>
+    <script type="text/javascript" src="bootstrap/js/jquery.easing.1.3.js"></script>
+    <script src="bootstrap/js/jquery.ui.totop.js" type="text/javascript"></script>	
+	<style type="text/css">
+.auto-style1 {
+	font-family: "Trebuchet MS";
+	color: #D9D9D9;
+}
+.auto-style2 {
+	text-decoration: underline;
+	color: #D9D9D9;
+}
+.auto-style3 {
+	color: #D9D9D9;
+}
+.auto-style4 {
+	font-family: "Trebuchet MS";
+	color: #D9D9D9;
+	padding-bottom: 5px;
+}
+</style>
 	<!--[if lt IE 8]>
   		<div style='text-align:center'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/img/upgrade.jpg"border="0"alt=""/></a></div>  
  	<![endif]-->
@@ -24,13 +42,13 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
-    <script src="html5.js"></script>
+    <script src="bootstrap/js/html5.js"></script>
     <link rel="stylesheet" href="bootstrap/css/docs.css" type="text/css" media="screen">
     <link rel="stylesheet" href="bootstrap/css/ie.css" type="text/css" media="screen">
   <![endif]-->
 </head>
 
-<body>
+<body style="background-color: #DDDDDD">
 <!--==============================header=================================-->
 <header>
     <div class="container">
@@ -38,7 +56,8 @@
         	<div class="span12">
             	<div class="header-block clearfix">
                     <div class="clearfix header-block-pad">
-                        <h1 class="brand"><a href="index.html"><img src="img/logo.png" alt=""></a><span>Life Style</span></h1>
+                        <h1 class="brand"><span>
+						<img alt="" src="bootstrap/img/LogoMoms.PNG" style="width: 300px; height: 300px"></span></h1>
                         <form id="search-form" action="search.php" method="GET" accept-charset="utf-8" class="navbar-form" >
                             <input type="text" name="s" onBlur="if(this.value=='') this.value=''" onFocus="if(this.value =='' ) this.value=''"  >
                             <a href="#" onClick="document.getElementById('search-form').submit()"></a>
@@ -50,34 +69,20 @@
                                 <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse_">MENU</a>                                                   
                                 <div class="nav-collapse nav-collapse_ collapse">
                                     <ul class="nav sf-menu">
-                                      <li class="li-first"><a href="index.html"><em class="hidden-phone"></em><span class="visible-phone">Home</span></a></li>
-                                      <li class="sub-menu"><a href="index-1.html">about</a>
-                                        <ul>
-                                          <li><a href="#">Welcome Message</a></li>
-                                          <li class="sub-menu"><a href="#">Company Profile</a>
-                                            <ul>
-                                              <li><a href="#">Our Capabilities</a></li>
-                                              <li><a href="#">Advantages</a></li>
-                                              <li><a href="#">Work Team</a></li>
-                                              <li><a href="#">Partnership</a></li>
-                                              <li><a href="#">Support</a></li>
-                                            </ul>
-                                          </li>
-                                          <li><a href="#">Our History</a></li>
-                                          <li><a href="#">Testimonials</a></li>
-                                        </ul>
-                                      </li>
-                                      <li class="active"><a href="index-2.html">Lifestyle</a></li>
-                                      <li><a href="index-3.html">Parenting</a></li>
-                                      <li><a href="index-4.html">Eat</a></li>
+                                      <li class="li-first"><a href="MomsDaily.html">Home</a></li>
+                                      <li class="sub-menu"><a href="About Us.html">About Us</a>
+                                        </li>
+                                      <li class="active"><a href="Lifestyle.html">Lifestyle</a></li>
+                                      <li><a href="Parenting.html">Parenting</a></li>
+                                      <li><a href="Eat.html">Eat</a></li>
                                       <li><a href="index-5.html">contacts</a></li>
                                     </ul>
                                 </div>
                                 <ul class="social-icons">
-                                    <li><a href="#"><img src="img/icon-1.png" alt=""></a></li>
-                                    <li><a href="#"><img src="img/icon-2.png" alt=""></a></li>
-                                    <li><a href="#"><img src="img/icon-3.png" alt=""></a></li>
-                                    <li><a href="#"><img src="img/icon-4.png" alt=""></a></li>
+                                    <li><a href="#"><img src="bootstrap/img/icon-1.png" alt=""></a></li>
+                                    <li><a href="#"><img src="bootstrap/img/icon-2.png" alt=""></a></li>
+                                    <li><a href="#"><img src="bootstrap/img/icon-3.png" alt=""></a></li>
+                                    <li><a href="#"><img src="bootstrap/img/icon-4.png" alt=""></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -89,7 +94,7 @@
 </header>
 <section id="content">
 <div class="sub-content">
-  <div class="container">
+  <div class="container" style="overflow: hidden">
     <div class="row">
       <div class="span3">
           <h4>Reference</h4>
@@ -114,54 +119,58 @@
           <h4 class="bot-0">CREATE A BETTER LIFE</h4>
           <ul class="list-services">
             <li>
-            	<img src="img/page3-icon3.png" alt="">
+            	<img src="bootstrap/img/page3-icon3.png" alt="">
                 <div>
                 	<p class="text-info">Make up Natural</p>
                 	
-                	  Make up merupakan alat kecantikan yang selalu dibawa kemana saja oleh wanita. Dengan menggunakan make up wanita akan tampil lebih cantik dan menawan
-                	Bagi wanita make up adalah salah satu kebutuhan alami, yang dapat merubah penampilan dan dapat menambah rasa percaya diri.<a href="MakeupNatural.html" class="underline">>></a>
+                	  <span class="auto-style1">Make up merupakan alat kecantikan yang selalu dibawa kemana saja oleh wanita. Dengan menggunakan make up wanita akan tampil lebih cantik dan menawan
+                	Bagi wanita make up adalah salah satu kebutuhan alami, yang dapat merubah penampilan dan dapat menambah rasa percaya diri.<a href="MakeupNatural.html" class="auto-style2">>></a></span>
 
                 	
                     
                 </div>
             </li>
             <li>
-            	<img src="img/page3-icon5.png" alt="">
+            	<img src="bootstrap/img/page3-icon5.png" alt="">
                 <div >
                 	<p class="text-info">Bagaimana mengatasi bau badan</p>
-                    Siapa sangka ternyata cara menghilangkan bau badan secara alami cukup ampuh dan permanen. Mungkin selama ini banyak orang menghilangkan bau badan dengan menggunakan parfum. Meskipun cukup ampuh namun tentunya cara tersebut bukan merupakan cara permanen. <a href="baubadan.html" class="underline">>></a>
+                    <span class="auto-style1">Siapa sangka ternyata cara menghilangkan bau badan secara alami cukup ampuh dan permanen. Mungkin selama ini banyak orang menghilangkan bau badan dengan menggunakan parfum. Meskipun cukup ampuh namun tentunya cara tersebut bukan merupakan cara permanen. 
+					<a href="baubadan.html" class="auto-style2">>></a></span>
                 </div>
             </li>
             <li>
-            	<img src="img/yoga3.png" alt="" width="90px" height="120px">
+            	<img src="bootstrap/img/yoga3.png" alt="" width="90px" height="120px">
                 <div style="margin-left:100px;">
                                 	<p class="text-info">Manfaat Yoga untuk kesehatan tubuh</p>
-                     Jika Anda memiliki komitmen dan resolusi agar lebih sehat di tahun 2015, Anda mungkin bisa mencoba yoga. Selama ini, yoga seringkali dipinggirkan sebagai bentuk olahraga karena tak terlihat se-intens olahraga lainnya seperti lari pagi, jogging, atau olahraga di gym.<a href="Yoga.html" class="underline">>></a>
+                     			   <span class="auto-style1">Jika Anda memiliki komitmen dan resolusi agar lebih sehat di tahun 2015, Anda mungkin bisa mencoba yoga. Selama ini, yoga seringkali dipinggirkan sebagai bentuk olahraga karena tak terlihat se-intens olahraga lainnya seperti lari pagi, jogging, atau olahraga di gym.<a href="Yoga.html" class="auto-style2">>></a></span>
                     
                 </div>
             </li>
             <li>
-            	<img src="img/sepatu2.png" alt="" width="90px" height="120px">
+            	<img src="bootstrap/img/sepatu2.png" alt="" width="90px" height="120px">
                 <div style="margin-left:100px;">
 
                 	<p class="text-info">MIX AND MATCH GAYA BERHIJAB SEHARI-HARI</p>
-                      Banyak sekali model hijab yang saat ini sedang berkembang dan disukai banyak wanita. Hijab bukan hanya soal aturan agama, namun juga jadi tren fashion yang tidak kalah berkembang dengan tren fashion lainnya.
-<a href="hijab.html" class="underline">>></a>
+                      <span class="auto-style1">Banyak sekali model hijab yang saat ini sedang berkembang dan disukai banyak wanita. Hijab bukan hanya soal aturan agama, namun juga jadi tren fashion yang tidak kalah berkembang dengan tren fashion lainnya.
+<a href="hijab.html" class="auto-style2">>></a></span>
                 </div>
             </li>
             <li>
-            	<img src="img/payung.png" alt=""width="90px" height="120px">
+            	<img src="bootstrap/img/payung.png" alt=""width="90px" height="120px">
 
                 <div>
-                	<p class="text-info">Nam elit agna,endrerit sit amet</p>
-                    Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porce suscipit varius mi, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at <a href="#" class="underline">>></a>
+                	<p class="text-info">Perencanaan Keuangan Keluarga</p>
+                     <span class="auto-style1">Dalam mengatur keuangan keluarga, Mums berperan sangat penting agar semua kebutuhan keluarga dapat terpenuhi dengan baik, termasuk tabungan dan investasi keluarga. Karena itu, family financial planning sangatlah penting 
+					<a href="momeditlat.html" class="auto-style2">>></a></span>
                 </div>
             </li>
             <li>
-            	<img src="img/financial.png" alt=""width="90px" height="120px">
+            	<img src="bootstrap/img/financial.png" alt=""width="90px" height="120px">
                 <div>
-                	<p class="text-info">Vestibulum iaculis lacinia est</p>
-                    Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porce suscipit varius mi, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at  <a href="#" class="underline">>></a>
+                	<p class="text-info">Tips Mengelola Keuangan bagi Wanita</p>
+                     <span class="auto-style1">Keuangan yang dikelola dengan baik akan membuat anda tenang dan terkontrol. Banyak godaan yang membuat anda "gila" dan tak menghiraukan keadaan keuangan anda. Mulai saat ini, stop menghambur-hamburkan uang untuk keperluan yang tidak penting. Simak tips mengelola keuangan bagi wanita 
+					<a href="momedittipskeu.html" class="auto-style2">>></a><span class="auto-style3">
+					</span></span>
                 </div>
             </li>
           </ul>
@@ -171,10 +180,10 @@
       <div class="span8">
           <h4>Sex Lifestyle</h4>
           <div class="text-block-1">
-              <img src="sex lifestyle.jpg" alt="" class="img-radius" />
+              <img src="bootstrap/img/sex lifestyle.jpg" alt="" class="img-radius" />
               <div>
                   <p class="lead p2">Manfaat Sex di pagi hari untuk kesehatan  </p>
-                   Hubungan pasangan suami istri dapat menjaga keharmonisan dalam suatu hubungan dan bermanfaat bagi kesehatan tubuh. Sebuah penelitian dilakukan di Italia untuk meneliti hubungan kehidupan seksual dengan tingkat kesehatan pria. Hasil penelitian menunjukkan bahwa seks yang sehat akan meminimalisir kadar masalah-masalah kardiovaskular dalam tubuh.
+                   <span class="auto-style4">Hubungan pasangan suami istri dapat menjaga keharmonisan dalam suatu hubungan dan bermanfaat bagi kesehatan tubuh. Sebuah penelitian dilakukan di Italia untuk meneliti hubungan kehidupan seksual dengan tingkat kesehatan pria. Hasil penelitian menunjukkan bahwa seks yang sehat akan meminimalisir kadar masalah-masalah kardiovaskular dalam tubuh.</span>
   
                   <p></p><a href="sexlifestyle.html" class="btn btn_">more info</a>
                   
@@ -201,18 +210,18 @@
     </div>
     <div class="span8 float">
       	<ul class="footer-menu">
-        	<li><a href="index.html">Home Page</a>|</li>
-            <li><a href="index-1.html">about</a>|</li>
-            <li><a href="index-2.html" class="current">LIFESTYLE</a>|</li>
-            <li><a href="index-3.html">PARENTING</a>|</li>
-            <li><a href="index-4.html">EAT</a>|</li>
-            <li><a href="index-5.html">Contacts</a></li>
+        	<li><a href="MomsDaily.html">Home</a>|</li>
+            <li><a href="AboutUs.html">About Us</a>|</li>
+            <li><a href="Lifestyle.html" class="current">Lifestyle</a>|</li>
+            <li><a href="Parenting.html">Parenting</a>|</li>
+            <li><a href="Eat.html">Eat</a>|</li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
         </ul>
-      	Stylish   &copy;  2012  |   <a href="index-6.html">Privacy Policy</a>
+      	Mom's Daily   &copy;  2015  |   <a href="index-6.html">Privacy Policy</a>
       </div>
     </div>
    </div>
 </footer>
-<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
 </body>
 </html>
